@@ -1,3 +1,4 @@
+![Screenshoot](https://github.com/Akouji/OtakuShare/blob/master/ss.PNG?raw=true)
 # :sparkles: **OtakuShare Projects** :sparkles:
 OtakuShare is a Google Drive Sharer service which allows all users to share files with anyone.
 
