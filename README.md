@@ -10,3 +10,7 @@ Features :
 Website : [OtakuShare](https://nee.my.id/) - https://nee.my.id
 
 We are not fully responsible for what has been shared by users, but if found by us files that violate the [TOS](http://nee.my.id/page/terms-conditions), we will immediately delete them.
+
+# License
+This website uses the YuuDrive V3 vendor which is premium, so sorry we don't share the source code!
+You can buy it through the following contact developer@yuudrive.me (Official web https://yuudrive.me)
