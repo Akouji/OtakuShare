@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://nee.my.id/</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+<url>
+  <loc>http://nee.my.id/page/about</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+<url>
+  <loc>http://nee.my.id/page/terms-conditions</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+<url>
+  <loc>http://nee.my.id/page/privacy-policy</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+<url>
+  <loc>http://nee.my.id/tools</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+<url>
+  <loc>http://nee.my.id/status</loc>
+  <lastmod>2020-08-24</lastmod>
+</url>
+</urlset>

@@ -1,0 +1,10 @@
+<?php require_once(realpath($_SERVER['DOCUMENT_ROOT']) . '/library/config/config.php');
+header('Content-Type: application/javascript');
+header("Expires: Tue, 03 Jul 2001 06:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+header("Connection: close");
+$g_token = base64_decode($_GET['t']);
+?>var developerKey="<?= $google['developer_key'];?>",clientId="<?= $google['client_id'];?>",oauthToken="<?= $g_token;?>",pick_id=[],scope=["https://www.googleapis.com/auth/drive.file"],max=0,pickerApiLoaded=!1;function onApiLoad(){gapi.load("picker",{callback:onPickerApiLoad})}function onAuthApiLoad(){window.gapi.auth.authorize({client_id:clientId,scope:scope,immediate:!1},handleAuthResult)}function onPickerApiLoad(){pickerApiLoaded=!0,createPicker()}function handleAuthResult(a){a&&!a.error&&(oauthToken=a.access_token,createPicker())}function createPicker(){if(pickerApiLoaded&&oauthToken){var a=new google.picker.DocsView().setIncludeFolders(!1).setOwnedByMe(!0),b=new google.picker.PickerBuilder().enableFeature(google.picker.Feature.MULTISELECT_ENABLED).addView(a).addViewGroup(new google.picker.ViewGroup(google.picker.ViewId.DOCS).addView(google.picker.ViewId.DOCUMENTS).addView(google.picker.ViewId.PRESENTATIONS)).setOAuthToken(oauthToken).setDeveloperKey(developerKey).setCallback(pickerCallback).build();b.setVisible(!0)}}function pickerCallback(a){if(a[google.picker.Response.ACTION]==google.picker.Action.PICKED){var d=a[google.picker.Response.DOCUMENTS];d[google.picker.Document.URL];let e="";d.forEach(function(f){return max++,25<max?(swal("Oow!","Maximum 25 files","warning"),max=15):void(e+=`<div class="text-dark files" g-id="${f.id}"><img src="${f.iconUrl}"><small><a class="nameFile"> ${f.name} </a></small><small class="statFile"></small><button onclick="delPicker(this)" type="button" class="close">&times;</button><hr/></div>`,pick_id.push(f.id))}),document.getElementById("upload-picker").innerHTML=e}}function delPicker(a){var b=$(a);b.parent().remove(),max--}

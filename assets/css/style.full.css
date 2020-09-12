@@ -1,0 +1,20 @@
+body{background: #FAFAFA;font-family:'Source Sans Pro',sans-serif;}
+p{font-family:unset!important;}.btn:not(.round){border-radius:5px;}
+.preload1{background:url(/assets/img/Ripple.gif) no-repeat;display:none;height:50px;}
+.footer{margin-top:120px;margin-bottom:20px;font-size:10pt;}
+#sharetext{font-size:11pt;}.control-label{font-size:9.5pt;}.navbar-brand{color:#4582EC !important;}
+.no-border{border-radius:0px !important;}.close{cursor:pointer;}
+
+.glyphicon-lg{font-size:3em}
+.blockquote-box{border-right:5px solid #E6E6E6;margin-bottom:25px}
+.blockquote-box .square{width:100px;min-height:50px;margin-right:22px;text-align:center!important;background-color:#E6E6E6;padding:20px 0}
+.blockquote-box.blockquote-primary{border-color:#4582EC}
+.blockquote-box.blockquote-primary .square{background-color:#4582EC;color:#FFF}
+.blockquote-box.blockquote-success{border-color:#4CAE4C}
+.blockquote-box.blockquote-success .square{background-color:#5CB85C;color:#FFF}
+.blockquote-box.blockquote-info{border-color:#46B8DA}
+.blockquote-box.blockquote-info .square{background-color:#5BC0DE;color:#FFF}
+.blockquote-box.blockquote-warning{border-color:#EEA236}
+.blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
+.blockquote-box.blockquote-danger{border-color:#D43F3A}
+.blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
